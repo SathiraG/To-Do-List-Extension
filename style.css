@@ -1,24 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+h1, h2, h3, h4, h5, h6, th {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+p, a, button, li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
 body {
     margin: 0;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     min-width: 400px;
 }
 
-.container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-
-.listDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-}
-  
 h1 {
     display: inline-block; 
     font-size: 50px;
@@ -26,6 +23,26 @@ h1 {
     text-transform: uppercase;
     color: #333;
     vertical-align: middle; 
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+
+#top-bar{
+    align-content: center;
+    height: 100px;
+}
+
+.listDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
 }
 
 #input{
@@ -45,7 +62,6 @@ h1 {
   }
   
 button{
-    margin-top: 10px;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -64,6 +80,7 @@ button:hover{
 
 li{
     list-style-type: none;
+    font-size: 30px;
 }
 
 hr{
@@ -78,10 +95,8 @@ ul{
     padding: 0px;
 }
 
-.deleteImg:hover{
-    src: url(delete1.png);
+#listItem:hover{
+    background-color: #ccc;
+    transition: 0.3s;
 }
 
-#top-bar{
-    display: flex;
-}
